@@ -64,17 +64,17 @@ func ResolveEquacao() {
 	delta := (b * b) - (4 * a * c)
 
 	if a <= 0 {
-		fmt.Print("Para ser uma equação de segundo grau, 'a' deve ser maior que 0.")
+		fmt.Print("Para ser uma equação de segundo grau, 'a' deve ser maior que 0.\n")
 	} else if delta < 0 {
-		fmt.Println("A função não possui raízes reais.")
+		fmt.Println("A função não possui raízes reais, pois delta < 0.")
 	} else if delta == 0 {
 		raiz := (-b / (2 * a))
-		fmt.Println("A função possui uma única raiz : ", raiz)
+		fmt.Println("A função possui uma única raiz, pois delta = 0. Raiz: ", raiz)
 	} else {
 		deltaRaiz := math.Sqrt(float64(delta))
 		raiz1 := (((float64(-b)) + (deltaRaiz)) / float64(2*a))
 		raiz2 := (((float64(-b)) - (deltaRaiz)) / float64(2*a))
-		fmt.Println("A função possui duas raízes :")
+		fmt.Println("A função possui duas raízes, pois delta > 0. Raízes:")
 		fmt.Println("x1 : ", raiz1)
 		fmt.Println("x2 : ", raiz2)
 	}

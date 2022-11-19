@@ -1,2 +1,2 @@
 # EDL
-Repositório para o matéria de EDL
+Repositório para a matéria de EDL

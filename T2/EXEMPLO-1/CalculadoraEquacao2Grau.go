@@ -37,12 +37,13 @@ func menu() {
 	fmt.Println("2- Sair do programa.")
 	fmt.Scan(&comando)
 
-	if comando == 1 {
+	switch comando {
+	case 1:
 		ResolveEquacao()
-	} else if comando == 2 {
+	case 2:
 		fmt.Println("Espero que tenha gostado ;)")
 		os.Exit(0)
-	} else {
+	default:
 		ClearTerminal()
 		fmt.Println("Esse comando não existe. Por favor tente novamente")
 		menu()
